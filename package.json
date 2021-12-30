@@ -14,16 +14,14 @@
 	"scripts": {
 		"lint": "eslint src tests scripts --ext mjs,ts --fix",
 		"format": "prettier --write {src,tests,scripts}/**/*.ts",
-		"docs": "typedoc",
+		"docs": "typedoc && node scripts/docs.mjs",
 		"test": "jest",
 		"test:watch": "jest --watch",
-		"update": "yarn up \"*\" -i",
+		"update": "up \"@*/*\" -i && yarn up \"*\" -i",
 		"clean": "node scripts/clean-dist.mjs",
 		"build": "tsc -b src && rollup -c scripts/rollup.bundle.ts && gen-esm-wrapper dist/index.js dist/index.mjs",
 		"watch": "tsc -b src -w",
 		"sversion": "standard-version",
-		"commit": "git-cz",
-		"cz": "git-cz",
 		"prepublishOnly": "rollup-type-bundler -v -e url events",
 		"prepare": "husky install .github/husky"
 	},
@@ -41,6 +39,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "^16.2.1",
 		"@commitlint/config-conventional": "^16.2.1",
+		"@discordjs/ts-docgen": "^0.3.4",
 		"@favware/npm-deprecate": "^1.0.4",
 		"@favware/rollup-type-bundler": "^1.0.7",
 		"@sapphire/eslint-config": "^4.3.0",
