@@ -1114,8 +1114,6 @@ __metadata:
     ts-node: ^10.7.0
     tslib: ^2.3.1
     typedoc: ^0.22.12
-    typedoc-plugin-djs-links: ^1.0.4
-    typedoc-plugin-mdn-links: ^1.0.5
     typescript: ^4.6.2
   languageName: unknown
   linkType: soft
@@ -7074,22 +7072,6 @@ __metadata:
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
   checksum: 33b39f3d0e8463985eeaeeacc3cb2e28bc3dfaf2a5ed219628c0b629d5d7b810b0eb2165f9f607c34871d5daa92ba1dc69f49051cf7d578b4cbd26c340b9d1b1
-  languageName: node
-  linkType: hard
-
-"typedoc-plugin-djs-links@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "typedoc-plugin-djs-links@npm:1.0.4"
-  checksum: 9db409c50400f4b9f15d24dd7b7a32a5672f61bd2840a0533661f42c92fbad0a5496ad898e08acb2a25a9e36a7ebbc698d3a36e8eb77ad5f471628d13f496d8d
-  languageName: node
-  linkType: hard
-
-"typedoc-plugin-mdn-links@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "typedoc-plugin-mdn-links@npm:1.0.5"
-  peerDependencies:
-    typedoc: 0.22.x
-  checksum: 7fa4d0e7069984afa039b0f362da7546ada52e6e26bfd990d26226e3751511fa1030903acc3a203bcd32804db5d215376d41a8d9c31dc74846da83f18c57e48b
   languageName: node
   linkType: hard
 
